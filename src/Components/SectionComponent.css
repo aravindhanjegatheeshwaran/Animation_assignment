@@ -1,8 +1,9 @@
 .section {
   text-align: center;
   padding: 40px 20px;
-  background-color: #000; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #000;
+  color: #fff;
+  margin: 5% 5%;
 }
 
 .title {
@@ -15,23 +16,34 @@
   margin-bottom: 32px;
 }
 
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  animation: slide 20s linear infinite;
+}
+
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  width: 500%;
 }
 
 .card {
-  background: #333; /* Card background */
+  background: #333;
   border-radius: 10px;
   padding: 20px;
+  margin: 0 10px;
   transition: transform 0.3s, border 0.3s;
-  width: 300px;
+  width: 20%;
+  box-sizing: border-box;
 }
 
 .card:hover {
-  border: 1px solid #fff; /* White border on hover */
+  border: 1px solid #fff;
   transform: translateY(-10px);
 }
 
@@ -52,7 +64,15 @@
   color: #ddd;
 }
 
-/* Responsive design */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @media (max-width: 576px) {
   .title {
     font-size: 28px;

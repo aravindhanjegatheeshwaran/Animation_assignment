@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Avatar } from 'antd';
 import 'antd/dist/reset.css';
-import './SectionComponent.css';
+import './SectionComponent.css'; // Import the CSS file for custom styles
 
 const data = [
   {
@@ -44,10 +44,14 @@ const SectionComponent = () => {
     <div className="section">
       <header className="title">What User Says</header>
       <p className="subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
-      <div className="cards">
-        {data.map((item, index) => (
-          <CardComponent key={index} {...item} />
-        ))}
+      <div className="carousel-container">
+        <div className="carousel">
+          <div className="cards">
+            {data.map((item, index) => (
+              <CardComponent key={index} {...item} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
