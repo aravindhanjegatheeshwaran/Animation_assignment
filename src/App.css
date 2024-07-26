@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -26,8 +27,12 @@
   background-color: #2b2b2b;
   color: white;
   border: none;
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s, border 0.3s; 
 }
 
-:hover .card{
-  border: white;
+.card:hover {
+  border: 1px solid white; 
+  transform: translateY(-5px); 
 }

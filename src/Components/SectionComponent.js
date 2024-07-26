@@ -27,7 +27,7 @@ const data = [
   },
   {
     name: 'Ronald Richard',
-    avatar: '%PUBLIC_URL%/5.png',
+    avatar: 'https://picsum.photos/536/354',
     content: 'Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I\'m always tax compliant.'
   }
 ];
