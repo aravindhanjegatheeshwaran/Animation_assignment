@@ -1,9 +1,10 @@
 import './App.css';
+import Outerbox from './Components/Outerbox';
 
 function App() {
   return (
     <>
-     <header>Arav</header>
+     <Outerbox />
     </>
   );
 }
