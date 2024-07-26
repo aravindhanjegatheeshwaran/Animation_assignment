@@ -1,10 +1,10 @@
 import './App.css';
-import TestimonialSection from './Components/TestimonialSection';
+import SectionComponent from './Components/SectionComponent';
 
 function App() {
   return (
     <>
-     <TestimonialSection />
+     <SectionComponent />
     </>
   );
 }

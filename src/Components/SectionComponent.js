@@ -4,7 +4,7 @@ import 'antd/dist/reset.css';
 
 const { Meta } = Card;
 
-const testimonials = [
+const data = [
   {
     name: 'Marvin McKinney',
     avatar: 'https://via.placeholder.com/150',
@@ -22,7 +22,7 @@ const testimonials = [
   }
 ];
 
-const TestimonialCard = ({ name, avatar, content }) => (
+const CardComponent = ({ name, avatar, content }) => (
   <Card className="testimonial-card">
     <Meta
       avatar={<Avatar src={avatar} />}
@@ -32,18 +32,18 @@ const TestimonialCard = ({ name, avatar, content }) => (
   </Card>
 );
 
-const TestimonialSection = () => {
+const SectionComponent = () => {
   return (
-    <div className="testimonial-section">
-      <h1 className="testimonial-title">What User Says</h1>
-      <p className="testimonial-subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
-      <div className="testimonial-cards">
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} {...testimonial} />
+    <div className="section">
+      <h1 className="title">What User Says</h1>
+      <p className="subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
+      <div className="cards">
+        {data.map((data, index) => (
+          <CardComponent key={index} {...data} />
         ))}
       </div>
     </div>
   );
 };
 
-export default TestimonialSection;
+export default SectionComponent;
