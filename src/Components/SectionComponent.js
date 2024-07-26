@@ -7,17 +7,27 @@ const { Meta } = Card;
 const data = [
   {
     name: 'Marvin McKinney',
-    avatar: 'https://via.placeholder.com/150',
+    avatar: '%PUBLIC_URL%/1.png',
     content: 'Since switching to Swift Revel, I finally have peace of mind regarding my business finances. With their secure platform, I trust my data\'s protection completely.'
   },
   {
     name: 'Jacob Jones',
-    avatar: 'https://via.placeholder.com/150',
+    avatar: '%PUBLIC_URL%/2.png',
     content: 'As a budding startup, we sought a financial solution that was simple, secure, and scalable. Swift Revel checked all the boxes, enabling focus on growth.'
   },
   {
     name: 'Theresa Webb',
-    avatar: 'https://via.placeholder.com/150',
+    avatar: '%PUBLIC_URL%/3.png',
+    content: 'Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I\'m always tax compliant.'
+  },
+  {
+    name: 'Cody Fisher',
+    avatar: '%PUBLIC_URL%/4.png',
+    content: 'As a budding startup, we sought a financial solution that was simple, secure, and scalable. Swift Revel checked all the boxes, enabling focus on growth.'
+  },
+  {
+    name: 'Ronald Richard',
+    avatar: '%PUBLIC_URL%/5.png',
     content: 'Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I\'m always tax compliant.'
   }
 ];
