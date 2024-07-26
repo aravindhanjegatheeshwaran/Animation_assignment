@@ -27,3 +27,7 @@
   color: white;
   border: none;
 }
+
+:hover .card{
+  border: white;
+}

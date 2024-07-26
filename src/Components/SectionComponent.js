@@ -23,7 +23,7 @@ const data = [
 ];
 
 const CardComponent = ({ name, avatar, content }) => (
-  <Card className="testimonial-card">
+  <Card className="card">
     <Meta
       avatar={<Avatar src={avatar} />}
       title={name}
