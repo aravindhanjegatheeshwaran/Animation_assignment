@@ -4,7 +4,9 @@ import SectionComponent from './Components/SectionComponent';
 function App() {
   return (
     <>
-     <SectionComponent />
+      <div className='app'>
+       <SectionComponent />
+     </div>
     </>
   );
 }

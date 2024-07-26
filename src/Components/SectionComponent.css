@@ -1,9 +1,15 @@
 .section {
   text-align: center;
   padding: 40px 20px;
-  background-color: #000;
+  background-color: #111;
   color: #fff;
-  margin: 5% 5%;
+  margin: 5% 12%;
+  max-height: 700px;
+}
+
+.section-div {
+  margin: 0 5%;
+  font-family: sans-serif;
 }
 
 .title {
@@ -19,27 +25,40 @@
 .carousel-container {
   overflow: hidden;
   width: 100%;
+  min-height: 400px;
 }
 
 .carousel {
   display: flex;
-  width: 100%;
-  animation: slide 20s linear infinite;
+  width: calc(40% * 3);
+  animation: zigzag 20s linear infinite;
 }
 
 .cards {
   display: flex;
-  width: 500%;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .card {
   background: #333;
   border-radius: 10px;
-  padding: 20px;
-  margin: 0 10px;
+  padding: 10px 0px;
   transition: transform 0.3s, border 0.3s;
   width: 20%;
   box-sizing: border-box;
+  color: white;
+  border: none;
+  flex: 0 0 auto;
+  margin: 5% 0px;
+  max-height: 250px;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
@@ -48,28 +67,57 @@
 }
 
 .avatar {
-  margin-bottom: 16px;
-  width: 64px;
-  height: 64px;
+  margin-bottom: 4px;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .name {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   font-size: 18px;
   color: #fff;
 }
 
 .content {
   font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
   color: #ddd;
 }
 
-@keyframes slide {
+
+.card:nth-child(odd) {
+  animation: zigzag 10s linear infinite, moveUp 10s linear infinite;
+}
+
+.card:nth-child(even) {
+  animation: zigzag 10s linear infinite, moveDown 10s linear infinite;
+}
+
+@keyframes moveUp {
+  0%, 10%, 50%, 90%, 100% {
+    transform: translateY(0px);
+  }
+  30%, 70% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveDown {
+  0%, 10%, 50%, 90%, 100% {
+    transform: translateY(0px);
+  }
+  30%, 70% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes zigzag {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

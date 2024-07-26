@@ -28,7 +28,27 @@ const data = [
     name: 'Ronald Richard',
     avatar: './5.png',
     content: "Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant."
-  }
+  },
+  {
+    name: 'Theresa Webb',
+    avatar: './3.png',
+    content: "Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant."
+  },
+  {
+    name: 'Theresa Webb',
+    avatar: './3.png',
+    content: "Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant."
+  },
+  {
+    name: 'Theresa Webb',
+    avatar: './3.png',
+    content: "Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant."
+  },
+  {
+    name: 'Theresa Webb',
+    avatar: './3.png',
+    content: "Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant."
+  },
 ];
 
 const CardComponent = ({ name, avatar, content }) => (
@@ -42,8 +62,10 @@ const CardComponent = ({ name, avatar, content }) => (
 const SectionComponent = () => {
   return (
     <div className="section">
-      <header className="title">What User Says</header>
-      <p className="subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
+      <div className='section-div'>
+        <header className="title">What User Says</header>
+        <p className="subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
+      </div>
       <div className="carousel-container">
         <div className="carousel">
           <div className="cards">
