@@ -1,10 +1,10 @@
 import './App.css';
-import Outerbox from './Components/Outerbox';
+import TestimonialSection from './Components/TestimonialSection';
 
 function App() {
   return (
     <>
-     <Outerbox />
+     <TestimonialSection />
     </>
   );
 }

@@ -1,3 +1,29 @@
-.App {
+.testimonial-section {
   text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.testimonial-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.testimonial-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  width: 300px;
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
 }
