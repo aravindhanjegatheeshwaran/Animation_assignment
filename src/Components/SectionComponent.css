@@ -1,0 +1,68 @@
+.section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  background: #333; /* Card background */
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, border 0.3s;
+  width: 300px;
+}
+
+.card:hover {
+  border: 1px solid #fff; /* White border on hover */
+  transform: translateY(-10px);
+}
+
+.avatar {
+  margin-bottom: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.name {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.content {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
