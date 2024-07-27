@@ -5,6 +5,9 @@
   margin: 5% 15%;
   max-height: 600px;
   text-align: center;
+
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%);
 }
 
 .section-div {
@@ -41,7 +44,7 @@
 
 .carousel {
   display: flex;
-  width: calc(40% * 3);
+  width: calc(30% * 3);
   animation: zigzag 20s linear infinite;
 }
 
@@ -59,13 +62,13 @@
   border-radius: 10px;
   padding: 10px 0px;
   transition: transform 0.3s, border 0.3s;
-  width: 20%;
+  height: 60%;
+  width: 25%;
   box-sizing: border-box;
   color: white;
   border: none;
   flex: 0 0 auto;
   margin: 5% 0px;
-  max-height: 250px;
   text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
@@ -92,19 +95,97 @@
 }
 
 .content {
-  font-size: 16px;
-  /* font-family: 'Times New Roman', Times, serif; */
+  font-size: 14px;
   color: #ddd;
 }
 
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .card:nth-child(odd) {
-  animation: zigzag 10s linear infinite, moveUp 10s linear infinite;
+  animation: zigzag 10s linear infinite, moveUp 5s ease-in-out infi/nite;
+  animation: zigzag 10s linear infinite, moveDown 5s ease-in-out infinite;
 }
 
 .card:nth-child(even) {
-  animation: zigzag 10s linear infinite, moveDown 10s linear infinite;
+  animation: zigzag 10s linear infinite, moveDown 5s ease-in-out infinite;
+  animation: zigzag 10s linear infinite, moveUp 5s ease-in-out infinite;
 }
 
+@keyframes zigzag {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* 
+@keyframes moveUp {
+  0%, 10%, 90%, 100% {
+    transform: translateY(0);
+  }
+  30%, 70% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveDown {
+  0%, 10%, 90%, 100% {
+    transform: translateY(0);
+  }
+  30%, 70% {
+    transform: translateY(50px);
+  }
+}
+
+.card:nth-child(odd) {
+  margin-top: 0px;
+  animation: zigzag 10s linear infinite, moveUpDown 10s linear infinite;
+}
+
+.card:nth-child(even) {
+  margin-bottom: -10px;
+  animation: zigzag 10s linear infinite, moveDownUp 10s linear infinite;
+}
 @keyframes moveUp {
   0%, 10%, 50%, 90%, 100% {
     transform: translateY(0px);
@@ -122,7 +203,6 @@
     transform: translateY(50px);
   }
 }
-
 @keyframes zigzag {
   0% {
     transform: translateX(0%);
@@ -131,17 +211,4 @@
     transform: translateX(-50%);
   }
 }
-
-@media (max-width: 576px) {
-  .title {
-    font-size: 28px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .content {
-    font-size: 14px;
-  }
-}
+*/
