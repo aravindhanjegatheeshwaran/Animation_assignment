@@ -1,35 +1,36 @@
 .section {
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   background-color: #111;
-  color: #fff;
-  margin: 5% 12%;
-  max-height: 700px;
-}
-
-.section::before {
-  left: 0;
-  background: linear-gradient(to right, #121212, transparent);
-}
-
-.section::after {
-  right: 0;
-  background: linear-gradient(to left, #121212, transparent);
+  color: hsl(0, 0%, 100%);
+  margin: 5% 15%;
+  max-height: 600px;
+  text-align: center;
 }
 
 .section-div {
-  text-align: center;
-  margin: 0 10%;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  width: 59%;
+  font-family: 'Inter', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
-  font-size: 60px;
-  margin-bottom: 16px;
+  font-size: 50px;
+  font-family: 'Inter', sans-serif; 
+  font-weight: bold;
+  text-align: center;
+  margin: 55px 0px 15px 0px;
 }
 
 .subtitle {
-  font-size: 28px;
+  font-size: 19px;
   margin-bottom: 32px;
+   font-family: 'Inter', sans-serif; 
+  font-weight: normal;
+  text-align: center;
 }
 
 .carousel-container {
@@ -92,10 +93,9 @@
 
 .content {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   color: #ddd;
 }
-
 
 .card:nth-child(odd) {
   animation: zigzag 10s linear infinite, moveUp 10s linear infinite;
