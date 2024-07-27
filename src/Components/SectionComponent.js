@@ -63,7 +63,7 @@ const SectionComponent = () => {
   return (
     <div className="section">
       <div className='section-div'>
-        <header className="title">What User Says</header>
+        <header className="title">What User says</header>
         <p className="subtitle">Testimonials that speak louder than words! Customer stories that light up our day.</p>
       </div>
       <div className="carousel-container">
