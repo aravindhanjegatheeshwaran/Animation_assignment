@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Avatar } from 'antd';
 import 'antd/dist/reset.css';
-import './SectionComponent.css'; // Import the CSS file for custom styles
+import './SectionComponent.css';
 
 const data = [
   {

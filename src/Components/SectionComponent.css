@@ -6,12 +6,12 @@
   text-align: center;
   -webkit-mask-image: linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%);
   mask-image: linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%);
+  font-family: 'Inter', sans-serif; 
 }
 
 .section-div {
   margin: 0 auto;
   width: 50%;
-  font-family: 'Inter', sans-serif; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,18 +20,13 @@
 
 .title {
   font-size: 50px;
-  font-family: 'Inter', sans-serif; 
   font-weight: bold;
-  text-align: center;
   margin: 55px 0px 15px 0px;
 }
 
 .subtitle {
   font-size: 19px;
   margin-bottom: 32px;
-  font-family: 'Inter', sans-serif; 
-  font-weight: normal;
-  text-align: center;
 }
 
 .carousel-container {
@@ -67,7 +62,6 @@
   border: none;
   flex: 0 0 auto;
   margin: 5% 0px;
-  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +70,6 @@
 
 .card:hover {
   border: 1px solid #fff;
-  /* transform: translateY(-10px); */
 }
 
 .avatar {
@@ -89,7 +82,6 @@
 .name {
   margin-bottom: 4px;
   font-size: 18px;
-  color: #fff;
 }
 
 .content {
@@ -155,14 +147,11 @@
 }
 
 .card:nth-child(odd) {
-  
-  animation: zigzag 2s linear infinite, moveUp 2s ease-in-out infinite;
-  animation: zigzag 2s linear infinite, moveDown 2s ease-in-out infinite;
+  animation: zigzag 20s linear infinite, moveUp 2s ease-in-out infinite;
 }
 
 .card:nth-child(even) {
-  animation: zigzag 2s linear infinite, moveDown 2s ease-in-out infinite;
-  animation: zigzag 2s linear infinite, moveUp 2s ease-in-out infinite;
+  animation: zigzag 20s linear infinite, moveDown 2s ease-in-out infinite;
 }
 
 @keyframes zigzag {
