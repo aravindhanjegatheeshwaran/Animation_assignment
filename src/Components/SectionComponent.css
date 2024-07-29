@@ -147,11 +147,11 @@
 }
 
 .card:nth-child(odd) {
-  animation: zigzag 20s linear infinite, moveUp 2s ease-in-out infinite;
+  animation: zigzag 20s linear infinite, moveUp 4s ease-in-out infinite;
 }
 
 .card:nth-child(even) {
-  animation: zigzag 20s linear infinite, moveDown 2s ease-in-out infinite;
+  animation: zigzag 20s linear infinite, moveDown 4s ease-in-out infinite;
 }
 
 @keyframes zigzag {
